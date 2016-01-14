@@ -338,8 +338,6 @@ class APIv1Endpoint {
           uri += `/r/${options.id}/about.json`;
         }
 
-        options.query.feature = 'mobile_settings';
-
         options.cache = {
           type: 'subreddits',
           cache: {
@@ -1339,7 +1337,7 @@ class APIv1Endpoint {
             case 'Listing':
               if (body.data && body.data.children) {
                 const children = body.data.children;
-                
+
                 // when either discussions or revisions requests have nothing to show
                 // the response looks identical, so we pass in a type when the request
                 // is made.
