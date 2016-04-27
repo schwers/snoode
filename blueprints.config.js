@@ -17,7 +17,7 @@ module.exports = [{
     plugins: [
       'production-loaders',
       'set-node-env',
-      'minify-and-treeshake',
+      // 'minify-and-treeshake',
       'abort-if-errors',
     ],
     externals: {
