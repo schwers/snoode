@@ -1,5 +1,6 @@
+import omit from 'lodash/omit';
+
 import { afterResponse, beforeResponse } from '../apiBase/APIResponsePaging';
-import { omit } from 'lodash/object';
 
 const identity = (id) => id;
 

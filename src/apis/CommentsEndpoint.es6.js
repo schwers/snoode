@@ -1,8 +1,7 @@
+import has from 'lodash/has';
+
 import apiRequest from '../apiBase/apiRequest';
 import { formatBaseContentQuery } from './BaseContentEndpoint';
-
-import { has } from 'lodash/object';
-
 import CommentModel from '../models2/CommentModel';
 import PostModel from '../models2/PostModel';
 

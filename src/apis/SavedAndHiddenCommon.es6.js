@@ -1,7 +1,7 @@
+import has from 'lodash/has';
+import omit from 'lodash/omit';
+
 import { runQuery, validateData } from '../apiBase/APIRequestUtils';
-
-import { has, omit } from 'lodash/object';
-
 import CommentModel from '../models2/CommentModel';
 import PostModel from '../models2/PostModel';
 

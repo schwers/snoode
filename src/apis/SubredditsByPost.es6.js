@@ -1,4 +1,4 @@
-import { isEmpty } from 'lodash/lang';
+import isEmpty from 'lodash/isEmpty';
 
 import apiRequest from '../apiBase/apiRequest';
 import Subreddit from '../models2/Subreddit';

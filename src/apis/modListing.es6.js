@@ -1,6 +1,6 @@
-import BaseContentEndpoint from './BaseContentEndpoint';
-import { has } from 'lodash/object';
+import has from 'lodash/has';
 
+import BaseContentEndpoint from './BaseContentEndpoint';
 import PostModel from '../models2/PostModel';
 import Comment from '../models2/Comment';
 

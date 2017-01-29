@@ -1,6 +1,7 @@
+import has from 'lodash/has';
+
 import BaseContentEndpoint from './BaseContentEndpoint';
 import Rule from '../models/rule';
-import { has } from 'lodash/object';
 
 const SUBREDDIT_REGEX =  /.*\/r\/(.+)\/about\/rules\.json.*/;
 const ADD_RULE_PATH = 'api/add_subreddit_rule';

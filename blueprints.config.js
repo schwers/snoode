@@ -1,4 +1,21 @@
-module.exports = [{
+var externals = [
+  'each',
+  'has',
+  'isEmpty',
+  'last',
+  'pick',
+  'omit',
+  'some',
+].reduce(function(dict, name) {
+  dict['lodash/'+name] = name;
+  return dict;
+}, {
+  lodash: 'lodash',
+  superagent: 'superagent',
+});
+
+
+module.exports = function() { return [{
   name: 'apiClient',
   webpack: {
     entry: {
@@ -23,6 +40,6 @@ module.exports = [{
       'abort-if-errors',
       'minify-and-treeshake',
     ],
-    externals: 'node-modules',
+    externals: externals,
   },
-}];
+}]}

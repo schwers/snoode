@@ -1,8 +1,7 @@
+import pick from 'lodash/pick';
+import isEmpty from 'lodash/isEmpty';
+
 import { runQuery, validateData } from '../apiBase/APIRequestUtils';
-
-import { pick } from 'lodash/object';
-import { isEmpty } from 'lodash/lang';
-
 import Subreddit from '../models2/Subreddit';
 
 const DEFAULT_SUBREDDIT_OPTIONS = {

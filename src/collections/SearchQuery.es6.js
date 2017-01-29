@@ -1,8 +1,7 @@
+import last from 'lodash/last';
+
 import Listing from './Listing';
 import SearchEndpoint from '../apis/SearchEndpoint';
-
-import { last } from 'lodash/array';
-
 import { withQueryAndResult } from '../apiBase/APIResponsePaging';
 import { POST, SUBREDDIT } from '../models2/thingTypes';
 const RESERVED_FOR_SUBBREDITS = 3; // api reserves 3 slots for subreddit results

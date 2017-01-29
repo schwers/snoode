@@ -1,4 +1,4 @@
-import { isEmpty } from 'lodash/lang';
+import isEmpty from 'lodash/isEmpty';
 
 import apiRequest from '../apiBase/apiRequest';
 import PostModel from '../models2/PostModel';

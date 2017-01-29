@@ -24,7 +24,7 @@
     "url": "https://github.com/reddit/node-api-client/issues"
   },
   "peerDependencies": {
-    "lodash": "4.x",
+    "lodash": "^4.12.0",
     "superagent": "1.x"
   },
   "devDependencies": {

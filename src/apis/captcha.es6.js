@@ -1,5 +1,6 @@
+import has from 'lodash/has';
+
 import BaseEndpoint from '../apiBase/BaseEndpoint';
-import { has } from 'lodash/object';
 
 export default class CaptchaEndpoint extends BaseEndpoint {
   move = this.notImplemented('move');

@@ -1,5 +1,4 @@
-import { forEach } from 'lodash/collection';
-import { last } from 'lodash/array';
+import last from 'lodash/last';
 
 import {
   TYPES,
@@ -119,15 +118,15 @@ export class MergedApiReponse extends APIResponseBase {
       SUBREDDIT,
     ];
 
-    forEach(apiResponses, (apiResponse) => {
-      forEach(apiResponse.results, (record) => {
+    apiResponses.forEach(apiResponse => {
+      apiResponse.results.forEach(record => {
         if (!seenResults.has(record.uuid)) {
           seenResults.add(record.uuid);
           this.results.push(record);
         }
       });
 
-      forEach(tableKeys, (tableKey) => {
+      tableKeys.forEach(tableKey => {
         const table = this.typeToTable[tableKey];
         Object.assign(table, apiResponse.typeToTable[tableKey]);
       });

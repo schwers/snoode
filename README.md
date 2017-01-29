@@ -11,7 +11,7 @@ import APIOptions from '@r/api-client';
 import { collections } from '@r/api-client';
 const { PostsFromSubreddit } = collections;
 
-import { each } from 'lodash/collection';
+import each from 'lodash/each';
 
 let frontpage = await PostsFromSubreddit.fetch(APIOptions, 'highqualitygifs')
 each(Array(10), async () => {
@@ -249,8 +249,8 @@ import APIOptions from '@r/api-client';
 import { collections } from '@r/api-client';
 const { PostsFromSubreddit } = collections;
 
-import { last } from 'lodash/array';
-import { each } from 'lodash/collection';
+import last from 'lodash/last';
+import each from 'lodash/each';
 
 let frontpage = await PostsFromSubreddit.fetch(APIOptions, 'all') // blank fetches frontpage;
 each(Array(10), async () => {

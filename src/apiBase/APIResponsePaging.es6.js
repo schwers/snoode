@@ -1,4 +1,5 @@
-import { last } from 'lodash/array';
+import last from 'lodash/last';
+
 import { MergedApiReponse } from './APIResponse';
 
 export const withQueryAndResult = (response, fn) => {

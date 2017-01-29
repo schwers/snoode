@@ -1,4 +1,4 @@
-import { has } from 'lodash/object';
+import has from 'lodash/has';
 
 import apiRequest from '../apiBase/apiRequest';
 import ValidationError from '../apiBase/errors/ValidationError';

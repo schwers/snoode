@@ -1,4 +1,5 @@
-import { pick } from 'lodash/object';
+import pick from 'lodash/pick';
+
 import NoModelError from '../apiBase/errors/NoModelError';
 
 const MOD_ACTION_MAP = {
